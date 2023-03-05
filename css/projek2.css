@@ -74,13 +74,14 @@ table {
     text-align: center;
 }
 .header_title{
-    font-size: 30px;
+    font-size: 40px;
     margin: 50px 0 60px 0;
     font-weight: 800;
     color: #3b4754;
 }
 .header_subtitle{
     color: #9c9fa1;
+    font-size: 25px;
     margin-bottom: 50px;
 }
 /* main */
@@ -109,6 +110,7 @@ table {
     margin-top: 30px;
     margin-bottom: 30px;
     font-style: italic;
+    font-size: 20px;
 }
 .konten1_profile{
     display: flex;
@@ -166,6 +168,9 @@ table {
     color: #9c9fa1;
     font-size: 13px;
     margin-bottom: 20px;
+}
+.fitur_text{
+    font-size: 15px;
 }
 #section2{
     max-width: 500px;
@@ -269,7 +274,7 @@ input[type=submit]{
     font-weight: bold;
 }
 .place_text p{
-    font-size: 20px;
+    font-size: 18px;
     color: #9c9fa1;
 }
 /* section5 */
@@ -289,7 +294,7 @@ input[type=submit]{
 #section5 p{
     margin: 0 20px;
     text-align: left;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 40px;
     color: #9c9fa1;
     line-height: 2.2ch;

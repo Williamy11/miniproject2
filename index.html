@@ -70,7 +70,7 @@
             <div class="contact_us">
                 <h3 class="contact_us_title">Contact Us</h3>
                 <p class="contact_us_subtitle">Sales akan menghubungi anda 1x24 Jam setelah data kami terima</p>
-                <form class="contact_us_form">
+                <form class="contact_us_form" name="contact_us_form" onsubmit="return validateForm()">
                     <div class="input-group">
                         <label class="label">Your Name</label> : &ThinSpace;
                         <div class="textbox">
@@ -83,19 +83,39 @@
                         <label class="label">What are you interested in?</label> &ThinSpace;
                         <div class="textbox">
                             <select name="option">
-                                <option>select here</option>
-                                <option>Scuba Diving</option>
-                                <option>Swimming</option>
-                                <option>Sight Seeing</option>
-                                <option>Adventure</option>
-                                <option>Hill</option>
-                                <option>Beach</option>
-                                <option>History</option>
+                                <option value="select">Select here</option>
+                                <option value="scuba diving">Scuba Diving</option>
+                                <option value="Swimming">Swimming</option>
+                                <option value="Sight Seeing">Sight Seeing</option>
+                                <option value="Adventure">Adventure</option>
+                                <option value="Hill">Hill</option>
+                                <option value="Beach">Beach</option>
+                                <option value="History">History</option>
                             </select>
                         </div>
                     </div>
                     <input type="submit" value="Send" />
                 </form>
+                <script>
+                    function validateForm() {
+                        var name = document.forms["contact_us_form"]["full-name"].value;
+                        var email = document.forms["contact_us_form"]["email-address"].value;
+                        var option = document.forms["contact_us_form"]["option"].value;
+                        if (name == "" ){
+                            alert("Nama tidak boleh kosong");
+                            return false;
+                        }else if(email== ""){
+                            alert("Email tidak boleh kosong");
+                            return false;
+                        }else if(option=="select"){
+                            alert("referensi tidak boleh kosong");
+                            return false;
+                        }else{
+                            alert("Form mu telah terkirim");
+                        }
+                        return;
+                    }
+                </script>
             </div>
         </section>
     </div>

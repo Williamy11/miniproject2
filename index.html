@@ -11,9 +11,9 @@
 <body>
     <nav class="navbar">
         <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png" class="navbar_logo" width="40" height="40" alt="">
-        <div class="navbut">Home</div>
-        <div class="navbut">Our Package</div>
-        <div class="navbut">Call us</div>   
+        <div class="navbut"><a href="#section1">Home</a></div>
+        <div class="navbut"><a href="#section3">Our Package</a></div>
+        <div class="navbut"><a href="#section5">Call Us</a></div>   
     </nav>
     <header class="header">
         <h1 class="header_title">
@@ -28,6 +28,9 @@
             <section id="section1">
             <div class="konten1">
                 <img src="https://th.bing.com/th/id/OIP.Ui8MkHcrD49iG9SWpQcYeQAAAA?pid=ImgDet&rs=1" class="konten1_img"  alt="">
+                <img src="https://th.bing.com/th/id/OIP.JXpRO8muzrnaQalH7uz95wHaEo?w=305&h=190&c=7&r=0&o=5&pid=1.7" class="konten1_img"  alt="">
+                <img src="https://www.travelsingapura.com/wp-content/uploads/2019/11/gardens-by-the-bay-singapore-1842332-scaled.jpg" class="konten1_img"  alt="">
+                <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_720,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/jsiimjmtltevetlzyhug/[OFERTA]Excursi%C3%B3ndeund%C3%ADa(desdeTokio)alMonteFujiyOshinoHakkai.jpg" class="konten1_img"  alt="">
                 <div class="konten1_text">
                     <p class="konten1_text_p">"Liburanku jadi menyenangkan bersama Travel Agentku"</p>
                 </div>
@@ -42,6 +45,22 @@
                 </div>
                 <hr width="30%" style="height:4px;border-width:0;color:#9c9fa1;background-color:#9c9fa1">
             </div>
+            <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("konten1_img");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 4000);    
+                }
+                </script>
             <div class="konten2">
                 <h3 class="konten2_text">
                     Embark on a 10-day journey through Thailand's most iconic and picturesque destinations. Explore the bustling streets of Bangkok, visit historic temples, and shop for souvenirs at the famous Chatuchak Weekend Market. Then head to the charming city of Chiang Mai, nestled in the mountains, to experience the laid-back vibe and rich culture. Take a scenic drive through the mountains to the bohemian town of Pai, surrounded by lush greenery and stunning waterfalls. Finally, relax on the paradise island of Phuket, stay in a luxurious beachfront resort and soak up the sun on some of Thailand's most beautiful beaches. Our travel package includes all flights, accommodation, ground transportation, and some meals, so you can focus on enjoying this unforgettable journey through Thailand.
